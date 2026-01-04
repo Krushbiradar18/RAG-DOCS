@@ -39,15 +39,15 @@ A free, local Retrieval-Augmented Generation (RAG) system for querying PDF docum
 cd ~/Desktop
 
 # Create project directory
-mkdir RAG-PAO
-cd RAG-PAO
+mkdir RAG-Agent
+cd RAG-Agent
 
 # Create folder structure
 mkdir data
 mkdir __pycache__
 
 # Your structure should look like:
-# RAG-PAO/
+# RAG-Agent/
 # ├── data/
 # ├── app.py
 # ├── rag_utils.py
@@ -95,8 +95,8 @@ ollama pull llama3.1:latest  # 4.9GB
 ### Step 4: Create Python Virtual Environment
 
 ```bash
-# Make sure you're in the RAG-PAO directory
-cd /Users/YOUR_USERNAME/Desktop/RAG-PAO
+# Make sure you're in the RAG-Agent directory
+cd /Users/YOUR_USERNAME/Desktop/RAG-Agent
 
 # Create virtual environment
 python3 -m venv venv
@@ -146,7 +146,7 @@ ls data/
 
 ```bash
 # Make sure you're in the project directory with venv activated
-cd /Users/YOUR_USERNAME/Desktop/RAG-PAO
+cd /Users/YOUR_USERNAME/Desktop/RAG-Agent
 source venv/bin/activate
 
 # Start the Streamlit app
@@ -221,7 +221,7 @@ which python
 
 ```bash
 # Full command sequence
-cd /Users/YOUR_USERNAME/Desktop/RAG-PAO
+cd /Users/YOUR_USERNAME/Desktop/RAG-Agent
 source venv/bin/activate
 streamlit run app.py
 
@@ -250,7 +250,7 @@ ollama run qwen2.5:0.5b
 ## 📁 Project Structure
 
 ```
-RAG-PAO/
+RAG-Agent/
 │
 ├── app.py                  # Main Streamlit application
 ├── rag_utils.py           # RAG logic (PDF loading, embeddings, QA chain)
@@ -342,7 +342,7 @@ ollama pull qwen2.5:0.5b
 # 1. Open Terminal
 
 # 2. Navigate to project
-cd /Users/YOUR_USERNAME/Desktop/RAG-PAO
+cd /Users/YOUR_USERNAME/Desktop/RAG-Agent
 
 # 3. Activate virtual environment
 source venv/bin/activate
@@ -373,7 +373,7 @@ streamlit run app.py
 
 ```bash
 # Navigate to project
-cd /Users/YOUR_USERNAME/Desktop/RAG-PAO
+cd /Users/YOUR_USERNAME/Desktop/RAG-Agent
 
 # Activate venv
 source venv/bin/activate
